@@ -1,0 +1,21 @@
+{
+  "name": "exptest",
+  "version": "0.0.0",
+  "authors": [
+    "cnichols <mellowdious@mail.com>"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
