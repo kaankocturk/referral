@@ -1,10 +1,30 @@
 doctype html
 html
   head
-    title= title
+    title Groop'a girin
+    link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
-    h1 This is a footer or something.
+    nav.navbar.navbar-default.navbar-static-top
+      .container
+        .navbar-right
+        //- .navbar-header
+          //- button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+          //- a.navbar-brand(href='/') Groop
+        //- #navbar.navbar-collapse.collapse
+        //-   
+        //-   ul.nav.navbar-nav.navbar-right
+        //-     li#giz
+        //-       a Gizlilik
+        //-     li#bas
+        //-       a Basinda Groop
+    div#g1.row
+      div#groop.col-xs-4.col-xs-offset-4
+    div#g2.row
+      h1 CHAT. SOCIALIZE. CONNECT.
+      p.col-xs-6.col-xs-offset-3 Uygulamamız yayınlanmadan önceki gelişmelerden haberdar olmak için e-posta adresinizi bırakın. Go Groop!
+    div#blockcontent
+      block content
     script(src='/components/jquery/dist/jquery.min.js', type='text/javascript')
-    script(src='/javascripts/main.js', type='text/javascript')
+    script(src='/lib/bootstrap/dist/js/bootstrap.min.js')
+    script(src="/javascripts/index.js")

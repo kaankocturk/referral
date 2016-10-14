@@ -1,6 +1,96 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  p Host address is #{host}
+  .container#top.well
+    h1#davet
+    h4#ss
+  .container#mid
+    .container
+      form
+        .form-group.col-xs-4.col-xs-offset-3
+          input#email.form-control(type='email', placeholder='E-posta', required)
+        button.btn.btn-success.col-xs-2(type='submit') Kaydol
+    div#foot.row
+      div.col-xs-4
+        p Bize ulaşmak için: info@groopapp.com
+      div.col-xs-3.col-xs-offset-3
+        p#basin Basında groop
+      div.col-xs-2
+        p#gizlilik Gizlilik
+  .container#reward.well
+    .container#rewards.col-xs-10.col-xs-offset-1
+      h4#count
+      #numbers.row.norow
+        .aleft.col-xs-3 Katılan arkadaş sayısı:
+        .col-xs-3
+          button#five.btn.btn-default.btn-circle.cr 5
+          span#bes.glyphicon
+        .col-xs-3
+          button#ten.btn.btn-default.btn-circle.cr 10
+          span#on.glyphicon
+        .col-xs-3
+          button#fifteen.btn.btn-default.btn-circle.cr 15
+          span#onbes.glyphicon
+      .progress
+        #pr.progress-bar.progress-bar-warning.progress-bar-striped.active(role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%;min-width: 2em")
+          span#prog
+      #inform.row.norow
+        .aleft.col-xs-3 Ödülünüz:
+        .col-xs-3 Açılış partisi
+          span.glyphicon.glyphicon-glass
+        .col-xs-3 Beta testi
+        .col-xs-3 Groop hediye paketi
+    .container#bottom.col-xs-10.col-xs-offset-1
+      #link.row
+        label.col-xs-2(for='sharelink') Linkiniz:
+        input#sharelink.col-xs-2.col-sm-4.col-md-6
+        span#fb.col-xs-4.col-sm-3.col-md-2
+        span#tw.col-xs-4.col-sm-3.col-md-2
+      #socialm.row  
+  #mgizlilik.modal.fade(role='dialog')
+    .modal-dialog
+      .modal-content
+        .modal-header
+          h1.modal-title Privacy Policy
+          h2 Last Updated: July 28th, 2016
+        .modal-body
+          p Groop is committed to protecting your privacy and developing technology that gives you the most powerful and safe online experience. This Statement of Privacy applies to Groop Web site including but not limited to mobile application and widgets and governs data collection and usage. By using the Groop and the Service therein, you consent to the data practices described in this statement.
+          h3 1. INFORMATION WE COLLECT
+          p We collect the following types of information. Information you provide us directly: Your username, password and e-mail address when you register for a Groop account. Profile information that you provide for your user profile (e.g., first and last name, picture, phone number). This information allows us to help you or others be "found" on Groop. User Activity (e.g., likes received, numbers of topics participated in a category) Communications between you and Groop. For example, we may send you Service-related emails (e.g., account verification, changes/updates to features of the Service, technical and security notices). Note that you may not opt out of Service-related e-mails.
+          p Finding your friends on Groop: If you choose, you can use our "Find friends" feature to locate other people with Groop accounts either through (i) your contacts list, (ii) third-party social media sites or (iii) through a search of names and usernames on Groop. If you choose to find your friends through (i) your device's contacts list, then Groop will access your contacts list to determine whether or not someone associated with your contact is using Groop. If you choose to find your friends through a (ii) third-party social media site, then you will be prompted to set up a link to the third-party service and you understand that any information that such service may provide to us will be governed by this Privacy Policy. If you choose to find your friends (iii) through a search of names or usernames on Groop then simply type a name to search and we will perform a search on our Service. Note about "Invite Friends" feature: If you choose to invite someone to the Service through our "Invite friends" feature, you may select a person directly from the contacts list on your device and send a text or email from your personal account. You understand and agree that you are responsible for any charges that apply to communications sent from your device, and because this invitation is coming directly from your personal account, Groop does not have access to or control this communication. Analytics information: We use third-party analytics tools to help us measure traffic and usage trends for the Service. These tools collect information sent by your device or our Service, including the web pages you visit, add-ons, and other information that assists us in improving the Service. We collect and use this analytics information with analytics information from other Users so that it cannot reasonably be used to identify any particular individual User. Cookies and similar technologies: Groop may use cookies and other technologies such as pixel tags and web beacons. These technologies help us better understand user behavior, tell us which parts of our website people have visited and facilitate and measure the effectiveness of advertisements and web searches. We treat information collected by cookies and other technologies as non-personal information. However, to the extent that Internet Protocol (IP) addresses or similar identifiers are considered personal information by local law, we also treat these identifiers as personal information. Similarly, to the extent that non-personal information is combined with personal information, we treat the combined information as personal information for the purposes of this Privacy Policy. Groop may use cookies and other technologies in mobile advertising services to control the number of times you see a given ad, deliver ads that relate to your interests, and measure the effectiveness of ad campaigns. Groop also use cookies and other technologies to remember personal information when you use our website, online services, and applications. Our goal in these cases is to make your experience with Groop more convenient and personal. Log file information: Log file information is automatically reported by your browser each time you make a request to access (i.e., visit) a web page or app. It can also be provided when the content of the webpage or app is downloaded to your browser or device. When you use our Service, our servers automatically record certain log file information, including your web request, Internet Protocol ("IP") address, browser type, referring / exit pages and URLs, number of clicks and how you interact with links on the Service, domain names, landing pages, pages viewed, and other such information. We may also collect similar information from emails sent to our Users which then help us track which emails are opened and which links are clicked by recipients. The information allows for more accurate reporting and improvement of the Service. Device identifiers: When you use a mobile device like a tablet or phone to access our Service, we may access, collect, monitor, store on your device, and/or remotely store one or more "device identifiers." Device identifiers are small data files or similar data structures stored on or associated with your mobile device, which uniquely identify your mobile device. A device identifier may be data stored in connection with the device hardware, data stored in connection with the device's operating system or other software, or data sent to the device by Groop. A device identifier may deliver information to us or to a third party partner about how you browse and use the Service and may help us or others provide reports or personalized content and ads. Some features of the Service may not function properly if use or availability of device identifiers is impaired or disabled. Metadata: Metadata is usually technical data that is associated with User Activity. For example, Metadata can describe how, when and by whom a piece of User Activity was collected and how that content is formatted. Users can add or may have Metadata added to their User Activity including a chat, likes or other data. This makes your User Activity more searchable by others and more interactive. Groop may provide geolocation option in the future which shall be subject to the rules contained herein.
+          h3 2. USE OF YOUR PERSONAL INFORMATION
+          p Groop collects and uses your personal information to operate the Groop Web site and deliver the services you have requested. Groop also uses your personally identifiable information beside the information you provide to inform you of other products or services available from Groop and its affiliates. Groop may also contact you via surveys to conduct research about your opinion of current services or of potential new services that may be offered. In addition to some of the specific uses of information Groop describes in this Privacy Policy, Groop may use information that it receives to provide personalized content and information to you and others, which could include online ads or other forms of marketing. Groop does not sell, rent or lease its customer lists to third parties. Groop may, from time to time, contact you on behalf of external business partners about a particular offering that may be of interest to you. In those cases, your unique personally identifiable information (e-mail, name, address, telephone number) is not transferred to the third party. In addition, Groop may share data with trusted partners to help us perform statistical analysis, send you email or postal mail, provide customer support, or arrange for deliveries. All such third parties are prohibited from using your personal information except to provide these services to Groop, and they are required to maintain the confidentiality of your information. Groop will disclose your personal information, without notice, only if required to do so by law or in the good faith belief that such action is necessary to: (a) conform to the edicts of the law or comply with legal process served on Groop or the site; (b) protect and defend the rights or property of Groop; and, (c) act under exigent circumstances to protect the personal safety of users of Groop, or the public.
+          h3 3. SHARING YOUR INFORMATION
+          p We will not rent or sell your information to third parties outside Groop (or the group of companies of which Groop is a part) without your consent, except as noted in this Policy. Parties with whom we may share your information: We may share User Activity and your information (including but not limited to, information from cookies, log files, device identifiers, location data, and usage data) with businesses that are legally part of the same group of companies that Groop is part of, or that become part of that group ("Affiliates"). Affiliates may use this information to help provide, understand, and improve the Service (including by providing analytics) and Affiliates' own services (including by providing you with better and more relevant experiences). But these Affiliates will honor the choices you make about who can see your photos. We may share personal information with companies who provide services such as information processing, extending credit, fulfilling customer orders, delivering products to you, managing and enhancing customer data, providing customer service, assessing your interest in our products and services, and conducting customer research or satisfaction surveys. These companies are obligated to protect your information and may be located wherever Groop operates. We may also share certain information such as cookie data with third-party advertising partners. This information would allow third-party ad networks to, among other things, deliver targeted advertisements that they believe will be of most interest to you. We may remove parts of data that can identify you and share anonymized data with other parties. We may also combine your information with other information in a way that it is no longer associated with you and share that aggregated information. It may be necessary − by law, legal process, litigation, and/or requests from public and governmental authorities within or outside your country of residence − for Groop to disclose your personal information. We may also disclose information about you if we determine that for purposes of national security, law enforcement, or other issues of public importance, disclosure is necessary or appropriate. We may also disclose information about you if we determine that disclosure is reasonably necessary to enforce our terms and conditions or protect our operations or users. Additionally, in the event of a reorganization, merger, or sale we may transfer any and all personal information we collect to the relevant third party. Parties with whom you may choose to share your User Activity: Any information or content that you voluntarily disclose for submitting to the Service, such as User Activity, becomes available to the public, as controlled by any applicable privacy settings that you set. To change your privacy settings on the Activity, please change your profile settings. Once you have shared User Activity or made it public, that User Activity may be re-shared by others. Subject to your profile and privacy settings, any User Activity that you make public is searchable by other Users and subject to use under our Groop API which Groop may provide in the future. The use of the Groop API is subject to the API Terms of Use which incorporates the terms of this Privacy Policy. If you remove information that you posted to the Service, copies may remain viewable in cached and archived pages of the Service, or if other Users or third parties using the Groop API which Groop may provide in the future have copied or saved that information.
+          h3 4. HOW WE STORE YOUR INFORMATION
+          p Your information collected through the Service may be stored and processed in other countries which Groop, its Affiliates or Service Providers maintain facilities. Groop, its Affiliates, or Service Providers may transfer information that we collect about you, including personal information across borders and from your country or jurisdiction to other countries or jurisdictions around the world. By registering for and using the Service you consent to the transfer of information to any other country in which Groop, its Affiliates or Service Providers maintain facilities and the use and disclosure of information about you as described in this Privacy Policy. We use commercially reasonable safeguards to help keep the information collected through the Service secure and take reasonable steps (such as requesting a unique password) to verify your identity before granting you access to your account. However, Groop cannot ensure the security of any information you transmit to Groop or guarantee that information on the Service may not be accessed, disclosed, altered, or destroyed. Please do your part to help us. You are responsible for maintaining the secrecy of your unique password and account information, and for controlling access to emails between you and Groop, at all times. Your privacy settings may also be affected by changes the social media services you connect to Groop make to their services. We are not responsible for the functionality, privacy, or security measures of any other organization.
+          h3 5. MODIFYING YOUR INFORMATION
+          p Groop gives users the following options for removing their information from our database to not receive future communications or to no longer receive our service; or for changing or modifying information previously provided. Send us an email with your request to the following address: info@groop.com When contacting us to change your status, be sure to include any information that would help us identify you on our lists, such as complete contact information (name, postal address, telephone number, and email address), any Groop account number(s), or information about venues in which you gave us your contact information online (guestbook, survey, etc.).
+          h3 6. PROTECTION OF PERSONAL INFORMATION
+          p Groop takes precautions — including administrative, technical, and physical measures — to safeguard your personal information against loss, theft, and misuse, as well as against unauthorized access, disclosure, alteration, and destruction.
+          h3 7. CHANGES TO PRIVACY POLICY
+          p We reserve the right to make changes to this privacy policy without advance notice.           
+        .modal-footer
+          button.btn.btn-default(type='button', data-dismiss='modal') Close          
+  #mbasin.modal.fade(role='dialog')
+    .modal-dialog
+      .modal-content
+        .modal-header
+          h1.modal-title Basinda Groop
+        .modal-body
+          .row
+            .col-xs-6
+              #hurriyet
+            .col-xs-6
+              h4 Hakan Baş ile Groop Röportajı
+              p Dünyanın en iyi 100 girişimcisi arasında gösterilen Hakan Baş, yeni girişimi ‘Groop’ ile internet üzerinden yeni nesil sohbet (chat) dönemi başlatmaya hazırlanıyor. 
+              button#hur.btn-primary Makaleye git
+          .row
+            .col-xs-6
+              #webrazzi
+            .col-xs-6
+              h4 Hakan Baş’ın yatırımcısı olduğu Groop, iddialı bir sosyal chat uygulaması
+              p Türkiye’de yüksek başarı elde eden Peak Games, Krombera ve Lidyana girişimleriyle tanıdığımız Hakan Baş, bu kez unicorn adayı olmasını umduğu yeni bir girişimin ilk sinyalini verdi.
+              button#razzi.btn-primary Makaleye git
+        .modal-footer
+          button.btn.btn-default(type='button', data-dismiss='modal') Close          
