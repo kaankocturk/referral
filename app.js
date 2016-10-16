@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-var mongoUrl = process.env.MONGOLAB_URI || 'mongodb://localhost/referral'
+var mongoUrl = process.env.MONGODB_URI || 'mongodb://localhost/referral'
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 mongoose.connect(mongoUrl, function(err) {
