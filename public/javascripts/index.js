@@ -66,7 +66,7 @@ function shareUrl(u, i){
   var a = u.split('/')[3];
   var b = u.split('/')[2];
   var uri = '<p>'+ u + '</p>';
-  var fbsrc = "https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2F"+b+"%2F"+a+"&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId";
+  var fbsrc = "https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2F"+b+"%2F"+a+"&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId";
   var fb = '<iframe id="iframe" src="" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>'
   var tw = '<a href="https://twitter.com/share" class="twitter-share-button" data-url='+ u +  ' data-hashtags="groopapp" data-show-count="false" data-size="large"></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>';
   document.getElementById("sharelink").value = u;
