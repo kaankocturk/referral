@@ -5,9 +5,15 @@ var router = express.Router();
 var User = require('../models/user');
 
 router.post('/', function(req, res) {
-  var user = new User(req.body);
-    user.save(function(err, saveditem) {
-      res.send(saveditem);
+  User.findOne({email: req.body.email}).exec(function(err, user){
+    if(user){
+      res.send('registered');
+    }else{
+      var newuser = new User(req.body);
+      newuser.save(function(err, saveditem) {
+        res.send(saveditem);
+      });
+    }
     });
   });
 

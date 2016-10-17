@@ -39,6 +39,10 @@ span{
   margin-right: 36vw;
 }
 
+.navbar-right:hover{
+ cursor: pointer;
+}
+
 a {
   color: #00B7FF;
 }
@@ -66,13 +70,10 @@ td{
   color: rgb(48,33,92);
 }
 
-#gizlilik,#basin, #giz, #bas:hover{
+#gizlilik,#basin, #ulasim:hover{
   cursor: pointer;
 }
 
-#mgizlilik{
-  color: black;
-}
 
 #mbasin{
   color: black;
@@ -89,13 +90,13 @@ td{
 #hurriyet{
   content: url('../../images/hurriyet.jpg');
   max-width: 20vw;
-  max-height: 20vw;
+  max-height: 16vh;
 }
 
 #webrazzi{
   content: url('../../images/webrazzi.png');
   max-width: 20vw;
-  max-height: 20vw;
+  max-height: 16vh;
 }
 /*#rewards{
   margin-bottom: 72px;
