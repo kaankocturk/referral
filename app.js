@@ -7,10 +7,6 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-var api_key = 'key-40b8728d78375e160853307036bca47e';
-var domain = 'sandboxf47140bc2466456e899531deb2420b90.mailgun.org';
-var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
-
 var mongoUrl = process.env.MONGODB_URI || 'mongodb://localhost/referral'
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;

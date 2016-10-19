@@ -44,7 +44,9 @@ function tracker(ema){
       var c = data.count;
     }
     var x = (c*10/1.5).toString();
-    var y = c.toString();
+    if(c){
+      var y = c.toString();
+    }
     if(c!= 0){
       $('#asayisi').text('Katılan arkadaş sayısı: ' + y);
       $('#pr').attr('aria-valuenow', x);
