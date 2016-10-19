@@ -2,13 +2,13 @@ extends layout
 
 block content
   nav.navbar.navbar-default.navbar-static-top
-    .container
-      #rightgroop.navbar-right
-  .container#top.well
+    #nav.container
+      //- #rightgroop.navbar-right
+  .container#top.well.col-xs-10.col-xs-offset-1
     h1#davet
     h4#ss
-  .container#reward.well
-    .container#rewards.col-xs-10.col-xs-offset-1
+  .container#reward.well.col-xs-10.col-xs-offset-1
+    .container#rewards.col-sm-10.col-sm-offset-1.col-xs-12.col-xs-offset-0
       h4#count
       #numbers.row.norow
         #asayisi.aleft.col-xs-3 Katılan arkadaş sayısı: 0
@@ -30,7 +30,7 @@ block content
           span.glyphicon.glyphicon-glass
         .col-xs-3 Beta Testi
         .col-xs-3 Groop Hediye Paketi
-    .container#bottom.col-xs-10.col-xs-offset-1
+    .container#bottom.col-sm-10.col-sm-offset-1.col-xs-12
       #link.row
         label.col-xs-4.col-xs-offset-4.col-sm-2.col-sm-offset-0(for='sharelink') Linkiniz:
         input#sharelink.col-xs-10.col-xs-offset-1.col-sm-offset-0.col-sm-4

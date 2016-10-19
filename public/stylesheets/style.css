@@ -24,13 +24,11 @@ span{
   background-color: rgb(48,33,92);
 }
 
-.navbar-right{
+#nav{
   content: url('../../images/logo.png');
-  max-width: 9vw;
-  max-height: 7vh;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  margin-right: 36vw;
+  max-width: 12vw;
+  max-height: 30vh;
+  margin: 1vh auto;
 }
 
 .navbar-right:hover{
@@ -201,15 +199,25 @@ span.glyphicon{
     }
     iframe
       {
-    transform: scale(1.6);
-    -ms-transform: scale(1.6);
-    -webkit-transform: scale(1.6);
-    -o-transform: scale(1.6);
-    -moz-transform: scale(1.6);
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -moz-transform: scale(1.5);
     transform-origin: bottom left;
     -ms-transform-origin: bottom left;
     -webkit-transform-origin: bottom left;
     -moz-transform-origin: bottom left;
     -webkit-transform-origin: bottom left;
     }
+    #nav{
+      max-width: 40vw;
+    }
+    #top{
+      margin-top: 20px;
+    }
+    #link{
+      margin-top: 20px;
+    }
+
 }
