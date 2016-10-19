@@ -7,10 +7,6 @@ html {
 
 body {
   background-image: linear-gradient(to bottom, rgba(48, 33, 92, 0.5) 48%, rgba(72, 15, 48, 0.5) 100%), url('../../images/landing.jpg');
-  /*background-repeat: no-repeat;
-  background-size:cover;
-  background-position:auto;*/
-  /*background-size: 100% 100%;*/
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -20,8 +16,6 @@ body {
   font: 14px "Avenir", Helvetica, Arial, sans-serif;
   text-align: center;
   color: white;
-  /*background: url('../../images/landing.jpg');
-  box-shadow:inset 0 0 0 2000px rgba(48,33,92,0.5);*/
 }
 span{
   font: 14px "Lucida Grande";
@@ -100,13 +94,9 @@ td{
   max-height: 16vh;
   margin: 0 auto;
 }
-/*#rewards{
-  margin-bottom: 72px;
-}*/
 
 #count{
   color: rgb(48,33,92);
-  /*text-decoration: underline;*/
   font-weight: bold;
 }
 
@@ -142,7 +132,6 @@ transform-origin: bottom left;
 }
 
 #prog{
-  /*font-size: 300%;*/
   text-align: center;
 }
 
@@ -166,9 +155,6 @@ span.glyphicon{
   font-size: 1.1vw;
 }
 
-/*.norow.label{
-  border-radius: 35px;
-}*/
 
 .btn-circle {
   width: 36px;
@@ -197,4 +183,33 @@ span.glyphicon{
 
 .aleft{
   text-align: left;
+}
+
+/*.aright{
+  text-align: right;
+}*/
+
+@media only screen and (max-width: 500px) {
+    #fb, #tw {
+        margin-top: 25px;
+    }
+    .norow{
+      font-size: 60%;
+    }
+    #bottom label{
+      font-size: 120%;
+    }
+    iframe
+      {
+    transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    -webkit-transform: scale(1.6);
+    -o-transform: scale(1.6);
+    -moz-transform: scale(1.6);
+    transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    -webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    -webkit-transform-origin: bottom left;
+    }
 }
