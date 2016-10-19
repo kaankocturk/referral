@@ -19,7 +19,7 @@ function init(){
     window.open('http://webrazzi.com/2016/07/28/hakan-basin-yatirimcisi-oldugu-groop-iddiali-bir-sosyal-chat-uygulamasi/', '_blank');
   });
   $('p#ulasim').on('click', function(){
-    window.open('mailto:test@example.com');
+    window.open('mailto:info@groopapp.com');
   });
   $('#foot').css('margin-top', '40vh');
 }
