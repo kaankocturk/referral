@@ -49,9 +49,24 @@ function getUser(e){
       localStorage.setItem('email', data.email);
       localStorage.setItem('url', url);
       localStorage.setItem('id', data._id);
+      // welcomeMail();
       location.href = '/share';
     }
   })
   .fail(function(error){
     });
 }
+
+// function welcomeMail(){
+//   var data = {
+//   from: 'Excited User <me@samples.mailgun.org>',
+//   to: localStorage.getItem('email'),
+//   subject: 'Hello',
+//   text: 'Testing some Mailgun awesomness!'
+// };
+//
+// mailgun.messages().send(data, function (error, body) {
+//   console.log(body);
+//   console.log(error);
+// });
+// }
