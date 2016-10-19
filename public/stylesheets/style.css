@@ -91,12 +91,14 @@ td{
   content: url('../../images/hurriyet.jpg');
   max-width: 20vw;
   max-height: 16vh;
+  margin: 0 auto;
 }
 
 #webrazzi{
   content: url('../../images/webrazzi.png');
   max-width: 20vw;
   max-height: 16vh;
+  margin: 0 auto;
 }
 /*#rewards{
   margin-bottom: 72px;
@@ -178,8 +180,8 @@ span.glyphicon{
   border-radius: 18px;
 }
 
-.btn-circle:hover{
-  cursor: crosshair;
+#ulasim{
+  text-decoration: underline;
 }
 
 #mid{

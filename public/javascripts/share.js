@@ -36,7 +36,6 @@ function shareUrl(u, i){
 }
 
 function tracker(ema){
-    // shareView();
     $.get('/users/'+ ema).success(function(data){
     if(data.count>15){
       var c = 15;

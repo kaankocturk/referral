@@ -21,4 +21,5 @@ function init(){
   $('p#ulasim').on('click', function(){
     window.open('mailto:test@example.com');
   });
+  $('#foot').css('margin-top', '40vh');
 }

@@ -16,6 +16,10 @@ router.get('/privacy', function(req, res, next) {
   res.render('privacy');
 });
 
+router.get('/pp', function(req, res, next) {
+  res.render('privacy');
+});
+
 router.get('/home', function(req, res, next) {
   console.log('home');
   res.render('home');

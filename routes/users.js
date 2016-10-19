@@ -42,11 +42,11 @@ router.post('/', function(req, res) {
       });
     });
 
-  router.get('/emaillist/1', function(req, res, next) {
-    User.find({}).exec(function(err, items) {
-        res.send(items);
-      });
-    });
+  // router.get('/emaillist/1', function(req, res, next) {
+  //   User.find({}).exec(function(err, items) {
+  //       res.send(items);
+  //     });
+  //   });
 
     router.get('/:id', function(req, res, next) {
       User.findOne({email: req.params.id}).exec(function(err, user) {
