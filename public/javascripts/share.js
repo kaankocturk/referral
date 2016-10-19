@@ -8,8 +8,7 @@ function initialize(){
   var id = localStorage.getItem('id');
   shareUrl(url, id);
   tracker(em);
-  $('div#rightgroop').on('click', function(){
-    console.log('su[ bitch]');
+  $('div#nav').on('click', function(){
     location.href = '/home';
   });
 }
