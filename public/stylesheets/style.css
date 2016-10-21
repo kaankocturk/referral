@@ -134,7 +134,7 @@ transform-origin: bottom left;
 }
 
 #foot{
-  margin-top: 18vh;
+  margin-top: 20vh;
   font-size: 125%;
 }
 
@@ -218,6 +218,9 @@ span.glyphicon{
     }
     #link{
       margin-top: 20px;
+    }
+    #foot{
+      margin-top: 8vh;
     }
 
 }
