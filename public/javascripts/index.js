@@ -9,7 +9,7 @@ function init() {
     $('form').on('submit', getUser);
   }
   $('p#gizlilik').on('click', function() {
-    location.href = '/privacy';
+    location.href = '/privacy_tr';
   });
   $('p#basin').on('click', function() {
     $('#mbasin').modal('show');

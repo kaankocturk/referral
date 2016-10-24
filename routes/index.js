@@ -11,8 +11,12 @@ router.get('/share', function(req, res, next) {
   res.render('share');
 });
 
-router.get('/privacy', function(req, res, next) {
+router.get('/privacy_en', function(req, res, next) {
   res.render('privacy');
+});
+
+router.get('/privacy_tr', function(req, res, next) {
+  res.render('gizlilik');
 });
 
 router.get('/pp', function(req, res, next) {
